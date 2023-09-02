@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="intro">
+    <h1>Bienvenido a nuestra Herramienta de Prediccion</h1>
+    <p>
+        ¡Bienvenido a nuestra herramienta de predicción! Esta aplicación te permite usar nuestro modelo de
+        aprendizaje automático para predecir el motivo de viaje basados en los datos que proporcionas. Sigue estos
+        simples pasos para realizar una predicción:
+    </p>
+    <h3>Paso 1: Ingresar los Datos</h3>
+    <p>
+        En la sección de entrada de datos, verás un formulario donde puedes ingresar la información requerida.
+        Asegúrate de ingresar los valores correctos para cada campo, siguiendo las indicaciones que se proporcionan.
+    </p>
+    <h3>Paso 2: Realizar la Predicción</h3>
+    <p>
+        Una vez que hayas ingresado los datos, haz clic en el botón "Predecir". Nuestro modelo de aprendizaje
+        automático procesará los datos y generará una predicción basada en el modelo entrenado.
+    </p>
+    <h3>Paso 3: Resultados de la Predicción</h3>
+    <p>
+        En la sección de resultados, podrás ver la predicción generada por nuestro modelo. Los resultados te
+        proporcionarán información valiosa sobre el resultado esperado en función de los datos proporcionados.
+    </p>
+
+    <p>
+        ¡Eso es todo! Nuestra herramienta está aquí para ayudarte a obtener predicciones basadas en datos y
+        análisis.
+        Siéntete libre de experimentar con diferentes valores en el formulario para ver cómo afectan las
+        predicciones.
+    </p>
+
+</div>
+
+<div class="container">
+
+    <div class="content">
+        <h1>Formulario</h1>
+        <form id="prediction-form">
+            <label for="nacionalidad">Nacionalidad:</label>
+            <select id="nacionalidad" required>
+                <option value="">Seleciona Nacionalidad</option>
+                <option value="1">Ecuatorianos</option>
+                <option value="1">Extranjero</option>
+            </select>
+
+            <label for="mes">Mes:</label>
+            <select id="mes" required>
+                <option value="">Selecciona un mes</option>
+                <option value="1">Enero</option>
+                <option value="2">Febrero</option>
+                <option value="3">Marzo</option>
+                <option value="4">Abril</option>
+                <option value="5">Mayo</option>
+                <option value="6">Junio</option>
+                <option value="7">Julio</option>
+                <option value="8">Agosto</option>
+                <option value="9">Septiembre</option>
+                <option value="10">Octubre</option>
+                <option value="11">Noviembre</option>
+                <option value="12">Diciembre</option>
+            </select>
+
+            <label for="dia">Día:</label>
+            <input type="number" id="dia" name="dia" required min="1" max="31">
+
+            <label for="transporte">Vía de transporte:</label>
+            <select id="transporte" required>
+                <option value="">Selecciona un transporte</option>
+                <option value="1">Via Aérea</option>
+                <option value="2">Via Terrestre</option>
+                <option value="3">Via Marítima</option>
+                <option value="4">Via Fluvial</option>
+            </select>
+
+
+            <label for="pais">País:</label>
+            <select id="pais" required>
+                <option value="">Selecciona un país</option>
+                <option value="AMER_SAMOA">American Samoa</option>
+                <option value="ANGUILLA">Anguilla</option>
+                <option value="ARUBA">Aruba</option>
+                <option value="BELARUS">Belarus</option>
+                <option value="BENIN">Benin</option>
+                <option value="BULGARIA">Bulgaria</option>
+                <option value="BURKINA_FASO">Burkia Faso</option>
+                <option value="BURUNDI">Burundi</option>
+                <option value="CAMBODIA">Camboya</option>
+                <option value="CAMEROON">Camerun</option>
+                <option value="CANADA">Canada</option>
+                <option value="CAPE_VERDE">Cabo Verde</option>
+                <option value="CAYMAN_IS">Islas Caiman</option>
+                <option value="CENT_AFR_REP">Republica Centroafricana</option>
+                <option value="CHAD">Chad</option>
+                <option value="CHILE">Chile</option>
+                <option value="CHINA">China</option>
+                <option value="COLOMBIA">Colombia</option>
+                <option value="CONGO">Congo</option>
+                <option value="COSTA_RICA">Costa Rica</option>
+                <option value="COTE_DIVOIRE">Costa de Marfil</option>
+                <option value="CROATIA">Croacia</option>
+                <option value="CUBA">Cuba</option>
+                <option value="CYPRUS">Chipre</option>
+                <option value="CZECH_REP">Republica Checa</option>
+                <option value="DENMARK">Dinamarca</option>
+                <option value="DJIBOUTI">Djibouti</option>
+                <option value="DOMINICA">Dominica</option>
+                <option value="DOMINICAN_RP">Republica Dominicana</option>
+                <option value="D_RP_CONGO">Republica Democratica del Congo</option>
+                <option value="EGYPT">Egipto</option>
+                <option value="EL_SALVADOR">El Salvador</option>
+                <option value="EQ_GUINEA">Guinea Ecuatorial</option>
+                <option value="ESTONIA">Estonia</option>
+                <option value="ETHIOPIA">Etiopia</option>
+                <option value="FALKLAND_IS">Islas Malvinas (Falkland)</option>
+                <option value="FIJI">Fiji</option>
+                <option value="FINLAND">Finlandia</option>
+                <option value="FRANCE">Francia</option>
+                <option value="FR_GUIANA">Guayana Francesa</option>
+                <option value="FR_POLYNESIA">Polinesia Francesa</option>
+                <option value="GABON">Gabón</option>
+                <option value="GAMBIA">Gambia</option>
+                <option value="GEORGIA">Georgia</option>
+                <option value="GERMANY">Alemania</option>
+                <option value="GHANA">Ghana</option>
+                <option value="GREECE">Grecia</option>
+                <option value="GRENADA">Granada</option>
+                <option value="GUADELOUPE">Guadalupe</option>
+                <option value="GUATEMALA">Guatemala</option>
+                <option value="GUINEA">Guinea</option>
+                <option value="GUINEABISSAU">Guinea - Bissau</option>
+                <option value="GUYANA">Guyana</option>
+                <option value="HAITI">Haití</option>
+                <option value="HONDURAS">Honduras</option>
+                <option value="HONGKONG_SAR">Hong Kong</option>
+                <option value="HUNGARY">Hungria</option>
+                <option value="ICELAND">Islandia</option>
+                <option value="INDIA">India</option>
+                <option value="INDONESIA">Indonesia</option>
+                <option value="IRAN">Iran</option>
+                <option value="IRAQ">Iraq</option>
+                <option value="IRELAND">Irlanda</option>
+                <option value="ISRAEL">Israel</option>
+                <option value="ITALY">Italia</option>
+                <option value="JAMAICA">Jamaica</option>
+                <option value="JAPAN">Japon</option>
+                <option value="JORDAN">Jordania</option>
+                <option value="KAZAKHSTAN">Kazajstan</option>
+                <option value="KENYA">Kenya</option>
+                <option value="KIRIBATI">Kiribati</option>
+                <option value="KOREA_NORTE">Corea del Norte</option>
+                <option value="KOREA_SUR">Corea del Sur</option>
+                <option value="KUWAIT">Kuwait</option>
+                <option value="KYRGYZTAN">Kirguistan</option>
+                <option value="LATVIA">Letonia (Latijas)</option>
+                <option value="LEBANON">Libano</option>
+                <option value="LESOTHO">Lesotho</option>
+                <option value="LIBERIA">Liberia</option>
+                <option value="LIBYA">Jamahiriya Arabe Libia (Libia)</option>
+                <option value="LIECHTENSTEN">Liechtenstein</option>
+                <option value="LITHUANIA">Lituania</option>
+                <option value="LUXEMBOURG">Luxemburgo</option>
+                <option value="MADAGASCAR">Madagascar</option>
+                <option value="MALASIA">Malasia</option>
+                <option value="MALAWI">Malawi</option>
+                <option value="MALDIVES">Maldivas</option>
+                <option value="MALI">Mali</option>
+                <option value="MALTA">Malta</option>
+                <option value="MARSHALL_IS">Islas Marshall</option>
+                <option value="MARTINIQUE">Martinica</option>
+                <option value="MAURITANIA">Mauritania</option>
+                <option value="MAURITIUS">Mauricio</option>
+                <option value="MEXICO">Mexico</option>
+                <option value="MICRONESIA">Micronesia</option>
+                <option value="MONACO">Monaco</option>
+                <option value="MONGOLIA">Mongolia</option>
+                <option value="MOROCCO">Marruecos</option>
+                <option value="MOZAMBIQUE">Mozanbique</option>
+                <option value="MYANMAR">Myanmar (Birmania)</option>
+                <option value="NAMIBIA">Namibia</option>
+                <option value="NEPAL">Nepal</option>
+                <option value="NETHERLANDS">Paises Bajos (Holanda)</option>
+                <option value="NEW_ZEALAND">Nueva Zelandia</option>
+                <option value="NICARAGUA">Nicaragua</option>
+                <option value="NIGER">Niger</option>
+                <option value="NIGERIA">Nigeria</option>
+                <option value="NORWAY">Noruega</option>
+                <option value="OMAN">Oman</option>
+                <option value="PAKISTAN">Pakistan</option>
+                <option value="PANAMA">Panama</option>
+                <option value="PAPUA_NGUIN">Papua Nueva Guinea</option>
+                <option value="PARAGUAY">Paraguay</option>
+                <option value="PERU">Peru</option>
+                <option value="PHILIPPINES">Filipinas</option>
+                <option value="POLAND">Polonia</option>
+                <option value="PORTUGAL">Portugal</option>
+                <option value="PUERTO_RICO">Puerto Rico</option>
+                <option value="QATAR">Qatar</option>
+                <option value="REP_MOLDOVA">Republica de Moldova</option>
+                <option value="ROMANIA">Rumania</option>
+                <option value="RUSSIAN_FED">Federacion de Rusia</option>
+                <option value="RWANDA">Rwanda (Ruanda)</option>
+                <option value="SAMOA">Samoa</option>
+                <option value="SAN_MARINO">San Marino</option>
+                <option value="SAUDI_ARABIA">Arabia Saudita</option>
+                <option value="SENEGAL">Senegal</option>
+                <option value="SEYCHELLES">Seychelles</option>
+                <option value="SIERRA_LEONA">Sierra Leona</option>
+                <option value="SINGAPORE">Singapur</option>
+                <option value="SLOVAKIA">Eslovaquia</option>
+                <option value="SLOVENIA">Eslovenia</option>
+                <option value="SOMALIA">Somalia</option>
+                <option value="SOUTH_AFRICA">Sudafrica</option>
+                <option value="SPAIN">España</option>
+                <option value="SRI_LANKA">Sri Lanka (Ceilan)</option>
+                <option value="ST_KITTS_NEV">Saint Kitts y Nevia (San Cristobal y Nevis)</option>
+                <option value="ST_LUCIA">Santa Lucia (Isla)</option>
+                <option value="ST_VINCENT_G">San Vicente y las Granadinas</option>
+                <option value="SUDAN">Sudan</option>
+                <option value="SURINAME">Suriname</option>
+                <option value="SWAZILAND">Swaziland (Suazilandia)</option>
+                <option value="SWEDEN">Suecia</option>
+                <option value="SWITZERLAND">Suiza</option>
+                <option value="SYRIA">Republica Arabe Siria</option>
+                <option value="TAIWAN">Provincia Chino de Taiwan</option>
+                <option value="TAJIKISTAN">Tayikistan (Tajikistan)</option>
+                <option value="TANZANIA">Republica Unidad de Tanzania</option>
+                <option value="TFYROM">Ex Republica Yugoslavia</option>
+                <option value="THAILAND">Tailandia</option>
+                <option value="TOGO">Togo</option>
+                <option value="TRINIDAD_TBG">Trinidad y Tobago</option>
+                <option value="TUNISIA">Tunez</option>
+                <option value="TURKEY">Turquia</option>
+                <option value="TURKS_CAICOS">Islas Turcas y Caicos</option>
+                <option value="UGANDA">Uganda</option>
+                <option value="UK">Reino Unido</option>
+                <option value="UKRAINE">Ucrania</option>
+                <option value="UNTD_ARAB_EM">Emiratos Arabes Unidos</option>
+                <option value="URUGUAY">Uruguay</option>
+                <option value="USA">Estados Unidos</option>
+                <option value="USVIRGIN_IS">Islas Virgenes de los Estados Unidos</option>
+                <option value="UZBEKISTAN">Uzbekistan</option>
+                <option value="VANUATU">Vanuatu</option>
+                <option value="VENEZUELA">Venezuela</option>
+                <option value="VIET_NAM">Viet Nam</option>
+                <option value="YEMEN">Yemen</option>
+                <option value="ZAMBIA">Zambia</option>
+                <option value="ZIMBABWE">Zimbabwe</option>
+            </select>
+
+            <h2>Resultado de la Predicción</h2>
+            <textarea id="prediction-result" readonly></textarea>
+
+            <button type="submit">Predecir</button>
+            <button type="reset" id="limpiar">Limpiar</button>
+        </form>
+
+    </div>
+
+</div>
+<script src="main.js"></script>
+</body>
+</html>
